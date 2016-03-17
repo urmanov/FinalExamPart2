@@ -25,3 +25,16 @@ These may also be useful commands:
 And a hint to help you on your way. Remember that every GPU program has
 two parts: a CPU part and a GPU part. To run this example you will have
 to engage, at a minimum, at least 1 CPU and at least 1 GPU.
+
+Comments: 
+makefile had the same issues as in part 1. I added identation and corrected the name of the file
+
+pbs file: corrected 0 to for ncpus
+removed # sign from the line "cd $PBS_O_WORKDIR"
+at the bottom corrected ./cuda-thrust
+
+cuda-thrust.cu:
+corrected two commented lines on the top
+multiple errors: changed **device** to __device__; 
+corrected the if condition changed "? 1 : 1" tp "? 1 : 0"
+
